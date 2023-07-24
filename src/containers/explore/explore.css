@@ -1,0 +1,236 @@
+.explore-section {
+  background: url("../../assets/explore/explore-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.explore-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0 2rem;
+}
+
+.explore-heading h1 {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 75px;
+  color: #fff;
+}
+
+.explore-heading h1 span {
+  color: #03cec9;
+}
+
+.explore-heading p {
+  max-width: 530px;
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.explore-heading-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0.1rem 0.2rem 0.1rem 1.5rem;
+  max-width: 503px;
+  border-radius: 13px;
+}
+
+.explore-heading-search img {
+  width: 18px;
+}
+
+.explore-heading-search input {
+  height: 45px;
+  padding: 0 1rem;
+  width: 400px;
+  border: 0;
+  outline: none;
+}
+
+.explore-heading-search button {
+  width: 49px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  background-color: #1e1325;
+  border: 0;
+  outline: none;
+}
+
+.explore-title {
+  margin-top: 2rem;
+  align-self: flex-start;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  color: white;
+}
+
+.explore-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 2rem;
+}
+
+.explore-article {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.09);
+  gap: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+}
+
+.explore-article-image {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-article-image img {
+  width: 100%;
+  height: auto;
+}
+
+.explore-article-details {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.explore-article-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.explore-article-left h1 {
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #fff;
+}
+
+.explore-article-left div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.explore-article-left div p {
+  color: #fff;
+}
+
+.explore-article-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.explore-article-right img {
+  width: 30px;
+  height: 30px !important;
+}
+
+.waterfall {
+  grid-column: span 2;
+}
+
+.tajmahal {
+  grid-column: span 1;
+}
+
+.eiffel {
+  grid-row: span 2;
+}
+
+.gwoc {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.likes-bottom {
+  justify-content: flex-end;
+}
+
+.explore-see-more {
+  margin: 1rem auto 0 auto;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #fff;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (width < 1050px) {
+  .explore-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .waterfall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .tajmahal {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .eiffel {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .eiffel img {
+    height: 100%;
+  }
+  .gwoc {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (width < 650px) {
+  .explore-content {
+    grid-template-columns: 1fr;
+  }
+  .explore-heading-search input {
+    width: 300px;
+  }
+  .explore-title {
+    align-self: center;
+  }
+}
+
+@media screen and (width < 450px) {
+  .explore-heading-search input {
+    width: 250px;
+  }
+}

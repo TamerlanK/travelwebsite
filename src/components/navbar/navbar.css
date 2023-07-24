@@ -1,0 +1,134 @@
+.navbar {
+  padding: 0 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #000;
+  border-bottom: 1px solid black;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+}
+
+.navbar-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-links {
+  flex: 2;
+  max-width: 875px;
+  height: 100%;
+  min-width: 400px;
+}
+
+.navbar-links ul {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  background-color: #212121;
+  border-radius: 30px;
+}
+
+.navbar-links ul li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.navbar-links ul li a {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+.active a {
+  color: black !important;
+  background-color: white;
+}
+
+.navbar-sign {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.navbar-sign p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: none;
+  position: relative;
+}
+
+.navbar-menu svg {
+  cursor: pointer;
+}
+
+.navbar-menu-container {
+  position: absolute;
+  left: -250%;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+}
+
+.navbar-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navbar-menu-sign {
+  margin-top: 2rem;
+  color: #fff;
+  background-color: #212121;
+  padding: 0.5rem 1.5rem;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.navbar-menu-links li {
+  color: #fff;
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar-links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .navbar-sign {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 432px){
+  .navbar{
+    padding: 0 2rem;
+  }
+}

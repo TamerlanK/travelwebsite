@@ -1,0 +1,140 @@
+.packages-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #212121;
+}
+
+.packages-header h1 {
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 51px;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.packages-header h1 span {
+  color: #009490;
+}
+
+.packages-header p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #fff;
+}
+
+.packages-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.package {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 3px solid lightseagreen;
+  width: 100%;
+}
+
+.package-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.package-image img {
+  width: 100%;
+}
+
+.package-info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.package-info-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.package-title h1 {
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.location-div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.location-div img {
+  width: 20px;
+  aspect-ratio: 1 / 1;
+}
+.package-likes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.package-info > p:last-child {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin: 0.5rem 0;
+}
+
+.package button {
+  background-color: #006360;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+  border: 0;
+  outline: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.packages-section h3 {
+  margin: 1rem auto;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #fff;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (width < 1050px) {
+  .packages-content {
+    flex-direction: column;
+  }
+  .package {
+    padding: 3rem;
+  }
+}
+
+@media screen and (width < 560px) {
+  .packages-section {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,170 @@
+.recom {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 6rem;
+}
+
+.recomSide {
+  width: 435px;
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  color: white;
+  position: absolute;
+  border-radius: 7px;
+  z-index: 2;
+  left: 5vw;
+  top: 20vh;
+}
+
+.recomSide h1 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.recomSide img {
+}
+
+.recomSide button {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+  background-color: 006360;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  background-color: #009490;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.recomCardText {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.recomCardLocation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.5rem 0;
+}
+
+
+.recomContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.recomHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.recomHeader img {
+  margin-right: 5px;
+}
+
+.recomHeader h1 {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.recomHeader h1 span {
+  color: #097976;
+}
+
+.recomVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.recomVideo div {
+  position: absolute;
+  width: 3%;
+  aspect-ratio: 1 / 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  cursor: pointer;
+}
+
+.recomVideo div:nth-of-type(2) {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 14%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 35;
+}
+.recomVideo div:nth-of-type(3) {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 9%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 41;
+}
+
+.recomVideo img {
+  border-radius: 7px;
+  width: 100%;
+}
+
+.recomButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recomButtons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.recomButtons button:first-child {
+  background-color: #252525;
+}
+
+.recomButtons button:last-child {
+  background-color: #009490;
+}
+
+@media only screen and (width < 768px){
+  .recomHeader{
+    flex-direction: column;
+  }
+  .recomHeader h1{
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .recom{
+    justify-content: center;
+  }
+}

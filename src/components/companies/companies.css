@@ -1,0 +1,15 @@
+.companies-container {
+  display: flex;
+  padding: 2.5rem 6rem;
+  background: #b1b1b1;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.company {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+}
